@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
-  <body>
+  <body class="Body">
     <div class="App">
       <div></div>
       <div>
         <div class="Main">
           <div class="M_right">
             <div class="row1">
-              <img src="assets/image/Group 45.png" alt="" />
+              <img src="assets/image/Group 45.png" alt="" class="Logo" />
             </div>
             <div class="row2">
               <div class="T1">
@@ -37,12 +37,19 @@
               </div>
             </div>
             <div class="row4">
-              <button class="button2">إعرف المزيد</button>
-              <button class="button1" id="CheckIn">احجز موعد استشارة</button>
-              <div class="T5">العرض ساري فقط لمواعيد الاستشارة المحجوزة</div>
+              <button class="button2" onclick="Book()">إعرف المزيد</button>
+              <button class="button1" id="CheckIn" onclick="Book()">
+                احجز موعد استشارة
+              </button>
+              <div class="T5">
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
+                من 30/12 الى 12/1
+              </div>
             </div>
             <div class="row5">
-              <div class="T6">لا تفوت الفرصة واحجز موعدك الان!</div>
+              <div class="T6" onclick="Book()">
+                لا تفوت الفرصة واحجز موعدك الان!
+              </div>
               <div class="T7">
                 <div>االاستشارة تشمل:</div>
                 <div>١. صورة اشعة</div>
@@ -63,7 +70,14 @@
           </div>
         </div>
         <div class="T8">للمزيد من المعلومات</div>
-        <div class="eon_Info">
+        <div onclick="document.getElementById('step').scrollIntoView();">
+          <img
+            src="./assets/image/Polygon 1.svg"
+            alt=""
+            style="filter: brightness(0.5)"
+          />
+        </div>
+        <div class="eon_Info" id="step">
           <div></div>
           <div>
             <div class="T9">ما هو تقويم EON الشفاف؟</div>
@@ -71,19 +85,18 @@
               <div class="Info_R">
                 <div>
                   <img
-                    src="./assets/image/Group 35.png"
+                    src="./assets/image/35.png"
                     alt=""
                     class="eon_Info_Image"
                   />
                 </div>
                 <div class="T10">
-                  مصفف eon هو جهاز شفاف يمكن إزالته، يعمل على تصفيف وتعديل
-                  الأسنان. النتائج السريرية أثبتت أنها بنفس فعالية التقويم
-                  التقليدي، لكن مصفف eon أكثر نظافة وراحة من الأقواس المعدنية
-                  والأسلاك.
+                  مصفف eon هو جهاز شفاف يمكن إزالته، يعمل على تصفيف <br />وتعديل
+                  الأسنان. النتائج السريرية أثبتت أنها بنفس فعالية <br />التقويم
+                  التقليدي، لكن مصفف eon أكثر نظافة وراحة من <br />الأقواس
+                  المعدنية والأسلاك.
                 </div>
               </div>
-              <div></div>
               <div class="Info_L">
                 <div class="T_Info_H">
                   <div>
@@ -157,6 +170,115 @@
           </div>
           <div></div>
         </div>
+        <div class="steps">
+          <div></div>
+          <div>
+            <div class="T_steps">كيف بعمل تقويم EON الشفاف؟</div>
+            <div class="Main_steps">
+              <div>
+                <div class="T1_steps">الخطوة الأولى</div>
+                <div><img src="./assets/image/Image 12.png" alt="" /></div>
+                <div class="T2_steps">
+                  كل مصفف يعمل على<br />
+                  تعديل موقع أسنانك
+                </div>
+              </div>
+              <div>
+                <div class="T1_steps">الخطوة الثانية</div>
+                <div><img src="./assets/image/Image 13.png" alt="" /></div>
+                <div class="T2_steps">
+                  تتحرك الأسنان أكثر فأكثر<br />
+                  حتى تصل للابتسامة المثالية
+                </div>
+              </div>
+              <div>
+                <div class="T1_steps">الخطوة الثالثة</div>
+                <div><img src="./assets/image/Image 14.png" alt="" /></div>
+                <div class="T2_steps">
+                  تم تحقيق إصطفاف و <br />إستقامة الأسنان بشكل مثالي
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking">
+          <div></div>
+          <div class="Main_booking">
+            <div>
+              <div class="T1_booking">
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
+                من 30/12 الى 12/1
+              </div>
+              <div class="T2_booking" onclick="Book()">
+                لا تفوت الفرصة واحجز موعدك الان!
+              </div>
+            </div>
+            <div></div>
+            <div class="Btn">
+              <button class="button3" onclick="Book()">إعرف المزيد</button>
+              <button class="button4" id="CheckIn" onclick="Book()">
+                احجز موعد استشارة
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="comparison">
+          <div></div>
+          <div class="Main_comparison">
+            <div class="T1_comp">لماذا تقويم EON الشفاف؟</div>
+            <div>
+              <img
+                src="./assets/image/Group 46.svg"
+                alt=""
+                class="Image_comp"
+              />
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="Doctor">
+          <div></div>
+          <div>
+            <div class="T1_Doc">دكتور علي محمد قاسم</div>
+            <div>
+              <img
+                src="./assets/image/WhatsApp Image 2020-12-28 at 7.43.26 PM.png"
+                alt=""
+                class="Image_Doc"
+              />
+            </div>
+            <div class="T2_Doc">
+              طب وجراحة أسنان<br />
+              جامعة عجمان<br />
+              مركز بيلاندو، بغداد
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="booking">
+          <div></div>
+          <div class="Main_booking">
+            <div>
+              <div class="T1_booking">
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
+                من 30/12 الى 12/1
+              </div>
+              <div class="T2_booking" onclick="Book()">
+                لا تفوت الفرصة واحجز موعدك الان!
+              </div>
+            </div>
+            <div></div>
+            <div class="Btn">
+              <button class="button3" onclick="Book()">إعرف المزيد</button>
+              <button class="button4" id="CheckIn" onclick="Book()">
+                احجز موعد استشارة
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div></div>
       </div>
       <div></div>
     </div>

@@ -29,7 +29,7 @@ window.onclick = function (event) {
 
 phone.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "00962-xxx-xxx-xxx";
+  cont.placeholder = "00964-xxx-xxx-xxx";
   value = "phone";
 };
 
