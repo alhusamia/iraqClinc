@@ -21,10 +21,12 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 20fr 1fr;
+  align-items: center;
 }
 .Main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .Image_comp {
   width: 100%;
@@ -36,9 +38,11 @@
   display: grid;
   grid-template-rows: 0.5fr 0.3fr 0.35fr 0.35fr 0.45fr;
   margin-left: 50px;
+  align-items: center;
 }
 .M_left {
   display: grid;
+  align-items: center;
 }
 .row1 {
   margin-top: 42px;
@@ -47,10 +51,12 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   padding-top: 16px;
+  align-items: center;
 }
 .row3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .R_row3 {
   margin-right: 20%;
@@ -143,7 +149,7 @@
   height: auto;
 }
 .eon {
-  height: 61%;
+  height: 80%;
   margin-left: 60%;
 }
 .eon_Info {
@@ -151,16 +157,20 @@
   display: grid;
   grid-template-columns: 0.5fr 7fr 0.5fr;
   padding-bottom: 57px;
+  align-items: center;
 }
 .eon_Info_Main {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
+  align-items: center;
 }
 .Info_R {
   display: grid;
+  align-items: center;
 }
 .Info_L {
   display: grid;
+  align-items: center;
 }
 .eon_Info_Image {
   float: right;
@@ -180,7 +190,7 @@
 }
 
 .T3 {
-  font-size: 55px;
+  font-size: 50px;
   color: #ea5374;
   font-family: DroidSans-Bold;
 }
@@ -198,7 +208,7 @@
   font-family: DroidArabicNaskh;
 }
 .T6 {
-  font-size: 20px;
+  font-size: 18px;
   color: #ea5374;
   text-decoration: underline;
   text-align: right;
@@ -237,16 +247,16 @@
 
 .T_Info_H {
   color: #e7e7e7;
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
   display: grid;
-  grid-template-columns: 1.25fr 6fr 10fr;
+  grid-template-columns: 1.25fr 6fr 6fr;
   margin-top: 18px;
   font-family: DroidArabicNaskhBold;
 }
 .T_Info_B {
   color: #e7e7e7;
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
   padding-right: 32px;
   font-family: DroidArabicNaskh;
@@ -301,7 +311,7 @@
 }
 .T2_Doc {
   color: #878a8c;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding-top: 15px;
   font-family: DroidArabicNaskh;
@@ -310,31 +320,37 @@
   display: grid;
   grid-template-columns: 1fr 9fr 1fr;
   padding: 20px 0 73px;
+  align-items: center;
 }
 .Main_steps {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 .booking {
   display: grid;
-  grid-template-columns: 1.5fr 6fr 1fr;
+  grid-template-columns: 0.5fr 8fr 1fr;
   background-color: #ea5374;
   padding: 53px 0;
+  align-items: center;
 }
 .Main_booking {
   display: grid;
-  grid-template-columns: 5fr 1fr 7fr;
+  grid-template-columns: 7fr 1fr 7fr;
+  align-items: center;
 }
 .comparison {
   display: grid;
   grid-template-columns: 1fr 9fr 1fr;
   padding: 20px 0 67px;
   background-color: #878a8c;
+  align-items: center;
 }
 .Doctor {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
   padding: 53px 0;
+  align-items: center;
 }
 
 .B4 {
@@ -368,7 +384,6 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  direction: ltr;
 }
 
 /* Modal Content */
@@ -435,8 +450,9 @@
 .greeting {
   display: none;
   text-align: center;
-  font-size: 40px;
+  font-size: 33px;
   font-family: OpenSansRegular;
+  padding: 60px;
 }
 
 .modal-footer {
@@ -517,6 +533,10 @@ option {
 }
 
 @media (max-width: 839px) {
+  .greeting {
+    padding: 0;
+    font-size: 20px;
+  }
   .App {
     grid-template-columns: 1fr 10fr 1fr;
   }

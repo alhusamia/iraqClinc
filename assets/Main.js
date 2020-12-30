@@ -29,19 +29,19 @@ window.onclick = function (event) {
 
 phone.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "00964-xxx-xxx-xxx";
+  cont.placeholder = "***-***-***-00964";
   value = "phone";
 };
 
 WhatsApp.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "00962-xxx-xxx-xxx";
+  cont.placeholder = "***-***-***-00964";
   value = "whatsapp";
 };
 
 Email.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "****@gmail.com";
+  cont.placeholder = "البريد الالكتروني";
   value = "email";
 };
 
