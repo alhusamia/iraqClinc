@@ -18,6 +18,7 @@ function Book() {
   body.style.display = "block";
   greet.style.display = "none";
   cont.style.display = "none";
+  formel.reset();
 }
 
 span.onclick = function () {
