@@ -13,6 +13,9 @@
   font-display: swap;
   src: url("./Fonts/DroidSans-Bold.ttf");
 }
+.Span {
+  display: block;
+}
 .Body {
   max-width: 1400px;
   margin: 0 auto;
@@ -39,7 +42,9 @@
   grid-template-rows: 0.5fr 0.3fr 0.35fr 0.35fr 0.45fr;
   margin-left: 50px;
   align-items: center;
+  grid-gap: 1em;
 }
+
 .M_left {
   display: grid;
   align-items: center;
@@ -49,9 +54,9 @@
 }
 .row2 {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  padding-top: 16px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  grid-gap: 1em;
 }
 .row3 {
   display: grid;
@@ -66,6 +71,9 @@
 }
 .Btn {
   padding-top: 17px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
 }
 .button1 {
   border: none;
@@ -109,11 +117,11 @@
 .button3 {
   border: none;
   color: #878a8c;
-  padding: 5px 30px;
+  padding: 5px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 21px;
+  font-size: 18px;
   margin: 4px 20px;
   cursor: pointer;
   border-radius: 50px;
@@ -128,11 +136,11 @@
 .button4 {
   border: none;
   color: #ea5374;
-  padding: 5px 40px;
+  padding: 5px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50px;
@@ -150,7 +158,7 @@
 }
 .eon {
   height: 80%;
-  margin-left: 60%;
+  float: right;
 }
 .eon_Info {
   background-color: #878a8c;
@@ -178,7 +186,7 @@
 }
 .T1 {
   color: gray;
-  margin-right: 67%;
+  text-align: left;
   font-size: 23px;
   font-family: DroidArabicNaskh;
   line-height: 26px;
@@ -239,7 +247,7 @@
 }
 .T10 {
   color: #e7e7e7;
-  font-size: 18px;
+  font-size: 16px;
   text-align: right;
   font-family: DroidArabicNaskh;
   padding-top: 92px;
@@ -250,7 +258,7 @@
   font-size: 18px;
   text-align: right;
   display: grid;
-  grid-template-columns: 1.25fr 6fr 6fr;
+  grid-template-columns: 1.25fr 6fr 9fr;
   margin-top: 18px;
   font-family: DroidArabicNaskhBold;
 }
@@ -273,6 +281,7 @@
   color: #ea5374;
   font-size: 24px;
   text-align: center;
+  font-weight: bold;
   font-family: DroidArabicNaskh;
 }
 .T2_steps {
@@ -336,8 +345,9 @@
 }
 .Main_booking {
   display: grid;
-  grid-template-columns: 7fr 1fr 7fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  grid-gap: 1em;
 }
 .comparison {
   display: grid;
@@ -443,7 +453,7 @@
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 16px;
   display: block;
 }
 
@@ -499,6 +509,8 @@ option {
 }
 #contact {
   display: none;
+  direction: ltr;
+  text-align: end;
 }
 .loader {
   display: none;
@@ -533,9 +545,18 @@ option {
 }
 
 @media (max-width: 839px) {
+  .Span {
+    display: inline;
+  }
   .greeting {
     padding: 0;
     font-size: 20px;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .M_left {
+    grid-row: 1;
   }
   .App {
     grid-template-columns: 1fr 10fr 1fr;
@@ -585,29 +606,21 @@ option {
     margin: 0;
     line-height: 26px;
   }
+  .T10 {
+    padding: 12px;
+  }
+  .Text {
+    padding: 12px;
+  }
+  .Info_L {
+    padding: 12px;
+  }
+  .Btn {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
   .row3 {
     grid-gap: 1em;
-  }
-  .button1 {
-    font-size: 19px;
-    padding: 0;
-  }
-  .button2 {
-    margin: 0;
-    font-size: 19px;
-    padding: 0;
-  }
-  /* .button3 {
-    margin: 0;
-    font-size: 19px;
-    padding: 0;
-  }
-  .button4 {
-    margin: 0;
-    font-size: 19px;
-    padding: 0;
-  } */
-  .row3 {
     grid-template-columns: 1fr;
   }
   .R_row3 {
@@ -616,12 +629,28 @@ option {
   .L_row3 {
     margin: 0;
   }
+  .button3 {
+    width: 100%;
+    margin: 0;
+  }
+  .button4 {
+    width: 100%;
+    margin: 0;
+  }
   .row4 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 1em;
+    padding: 12px;
+  }
+  .row5 {
+    padding: 12px;
   }
   .Image {
     margin-top: 2em;
+    width: 100%;
+  }
+  .eon_Info_Image {
+    width: 100;
   }
 }

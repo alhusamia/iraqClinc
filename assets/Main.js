@@ -29,13 +29,13 @@ window.onclick = function (event) {
 
 phone.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "***-***-***-00964";
+  cont.placeholder = "+964 xx xxxxxxx";
   value = "phone";
 };
 
 WhatsApp.onclick = function () {
   cont.style.display = "block";
-  cont.placeholder = "***-***-***-00964";
+  cont.placeholder = "+964 xx xxxxxxx";
   value = "whatsapp";
 };
 
@@ -49,7 +49,7 @@ formel.onsubmit = async (e) => {
   e.preventDefault();
   let obj = {
     name: name.value,
-    contactMethod: `${method} ${cont.value} -Clinic : Al-Qimmah Clinic`,
+    contactMethod: `${method} ${cont.value} -Clinic : Belando Beauty `,
   };
 
   let response = await fetch(

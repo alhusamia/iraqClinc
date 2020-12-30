@@ -4,6 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "326327235092432");
+      fbq("track", "PageView");
+    </script>
+
+    <!-- End Facebook Pixel Code -->
+    <title>Belando Beauty</title>
+    <link rel="shortcut icon" href="./assets/image/H_logo.png" />
   </head>
   <body class="Body">
     <div class="App">
@@ -42,8 +74,8 @@
                 احجز موعد استشارة
               </button>
               <div class="T5">
-                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
-                من 30/12 الى 12/1
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة
+                <span class="Span"> من 30/12 الى 12/1 </span>
               </div>
             </div>
             <div class="row5">
@@ -107,7 +139,7 @@
                       height="32px"
                     />
                   </div>
-                  <div>واضح وشفاف مصففات</div>
+                  <div>واضح وشفاف</div>
                   <div></div>
                 </div>
                 <div class="T_Info_B">
@@ -204,16 +236,15 @@
         <div class="booking">
           <div></div>
           <div class="Main_booking">
-            <div>
+            <div class="Text">
               <div class="T1_booking">
-                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
-                من 30/12 الى 12/1
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة
+                <span class="Span"> من 30/12 الى 12/1 </span>
               </div>
               <div class="T2_booking" onclick="Book()">
                 لا تفوت الفرصة واحجز موعدك الان!
               </div>
             </div>
-            <div></div>
             <div class="Btn">
               <button class="button3" onclick="Book()">إعرف المزيد</button>
               <button class="button4" id="CheckIn" onclick="Book()">
@@ -259,16 +290,15 @@
         <div class="booking">
           <div></div>
           <div class="Main_booking">
-            <div>
+            <div class="Text">
               <div class="T1_booking">
-                العرض ساري فقط لمواعيد الاستشارة المحجوزة<br />
-                من 30/12 الى 12/1
+                العرض ساري فقط لمواعيد الاستشارة المحجوزة
+                <span class="Span"> من 30/12 الى 12/1 </span>
               </div>
               <div class="T2_booking" onclick="Book()">
                 لا تفوت الفرصة واحجز موعدك الان!
               </div>
             </div>
-            <div></div>
             <div class="Btn">
               <button class="button3" onclick="Book()">إعرف المزيد</button>
               <button class="button4" id="CheckIn" onclick="Book()">
@@ -322,7 +352,7 @@
               placeholder=""
               value=""
             />
-            <button type="submit" id="submit" class="B4">Submit</button>
+            <button type="submit" id="submit" class="B4">ارسال</button>
           </form>
         </div>
         <div class="greeting" id="greet">
@@ -333,5 +363,16 @@
       </div>
     </div>
     <script src="assets/Main.js"></script>
+    <!-- Facebook Pixel Code -->
+
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=326327235092432&ev=PageView
+      &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </body>
 </html>
