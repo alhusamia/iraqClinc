@@ -223,6 +223,12 @@
   margin-right: 14%;
   font-family: DroidArabicNaskh;
 }
+.Link {
+  cursor: pointer;
+}
+.Label {
+  padding-left: 1em;
+}
 .T7 {
   font-size: 18px;
   color: #878a8c;
@@ -460,7 +466,7 @@
 .greeting {
   display: none;
   text-align: center;
-  font-size: 33px;
+  font-size: 2em;
   font-family: OpenSansRegular;
   padding: 60px;
 }
@@ -476,8 +482,6 @@ input[type="text"] {
   box-sizing: border-box;
   font-size: 16px;
   margin: 10px 0;
-  background-color: #dddedf;
-  border: none;
   border-radius: 5px;
   font-family: OpenSansRegular;
 }
@@ -551,6 +555,7 @@ option {
   .greeting {
     padding: 0;
     font-size: 20px;
+    padding: 20px;
   }
   .modal-content {
     width: 90%;
@@ -628,6 +633,9 @@ option {
   }
   .L_row3 {
     margin: 0;
+  }
+  .Label {
+    padding: 0;
   }
   .button3 {
     width: 100%;

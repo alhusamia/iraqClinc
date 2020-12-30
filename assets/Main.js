@@ -15,6 +15,8 @@ var method = "";
 
 function Book() {
   modal.style.display = "block";
+  body.style.display = "block";
+  greet.style.display = "none";
 }
 
 span.onclick = function () {
@@ -63,5 +65,6 @@ formel.onsubmit = async (e) => {
   if (response.status == 200) {
     body.style.display = "none";
     greet.style.display = "block";
+    formel.reset()
   }
 };

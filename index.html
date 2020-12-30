@@ -75,13 +75,15 @@
               </button>
               <div class="T5">
                 العرض ساري فقط لمواعيد الاستشارة المحجوزة
-                <span class="Span"> من 30/12 الى 12/1 </span>
+                <span class="Span"> من ٣٠/١٢ الى ١٢/١ </span>
               </div>
             </div>
             <div class="row5">
-              <div class="T6" onclick="Book()">
-                لا تفوت الفرصة واحجز موعدك الان!
-              </div>
+              <h1 class="T6">
+                <span onclick="Book()" class="Link"
+                  >لا تفوت الفرصة واحجز موعدك الان!</span
+                >
+              </h1>
               <div class="T7">
                 <div>االاستشارة تشمل:</div>
                 <div>١. صورة اشعة</div>
@@ -106,7 +108,7 @@
           <img
             src="./assets/image/Polygon 1.svg"
             alt=""
-            style="filter: brightness(0.5)"
+            style="filter: brightness(0.5); cursor: pointer"
           />
         </div>
         <div class="eon_Info" id="step">
@@ -239,10 +241,12 @@
             <div class="Text">
               <div class="T1_booking">
                 العرض ساري فقط لمواعيد الاستشارة المحجوزة
-                <span class="Span"> من 30/12 الى 12/1 </span>
+                <span class="Span"> من ٣٠/١٢ الى ١٢/١ </span>
               </div>
-              <div class="T2_booking" onclick="Book()">
-                لا تفوت الفرصة واحجز موعدك الان!
+              <div class="T2_booking">
+                <span onclick="Book()" class="Link"
+                  >لا تفوت الفرصة واحجز موعدك الان!</span
+                >
               </div>
             </div>
             <div class="Btn">
@@ -293,10 +297,12 @@
             <div class="Text">
               <div class="T1_booking">
                 العرض ساري فقط لمواعيد الاستشارة المحجوزة
-                <span class="Span"> من 30/12 الى 12/1 </span>
+                <span class="Span"> من ٣٠/١٢ الى ١٢/١ </span>
               </div>
-              <div class="T2_booking" onclick="Book()">
-                لا تفوت الفرصة واحجز موعدك الان!
+              <div class="T2_booking">
+                <span onclick="Book()" class="Link"
+                  >لا تفوت الفرصة واحجز موعدك الان!</span
+                >
               </div>
             </div>
             <div class="Btn">
@@ -332,17 +338,17 @@
             <br />
             <label>طريقة الاتصال</label>
             <div style="display: flex; margin: 10px 0">
-              <label>رقم الهاتف</label><br />
               <input type="radio" id="phone" name="contact" value="phone" />
-              <label>واتس اب</label><br />
+              <label class="Label">رقم الهاتف</label><br />
               <input
                 type="radio"
                 id="WhatsApp"
                 name="contact"
                 value="WhatsApp"
               />
-              <label>بريد الكتروني</label><br />
+              <label class="Label">واتس اب</label><br />
               <input type="radio" id="Email" name="contact" value="Email" />
+              <label class="Label">بريد الكتروني</label><br />
             </div>
             <br />
             <input
